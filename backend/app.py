@@ -88,7 +88,7 @@ def evaluate():
 
 def create_app():
     return app
-"""
+
 if __name__ == '__main__':
     PORT = 5001
     print("\n=== Starting Flask Server ===")
@@ -100,18 +100,3 @@ if __name__ == '__main__':
     print("\nRegistered routes:")
     print([str(rule) for rule in app.url_map.iter_rules()])
     app.run(debug=True, host='0.0.0.0', port=PORT) 
-"""
-if __name__ == '__main__':
-    import os
-    PORT = int(os.environ.get("PORT", 8080))  # GCP przekazuje PORT jako zmienną środowiskową
-
-    print("\n=== Starting Flask Server ===")
-    print(f"Server will run on http://localhost:{PORT}")
-    print("Available endpoints:")
-    print("  - GET  /")
-    print("  - GET  /test")
-    print("  - POST /api/evaluate")
-    print("\nRegistered routes:")
-    print([str(rule) for rule in app.url_map.iter_rules()])
-
-    app.run(debug=True, host='0.0.0.0', port=PORT)

@@ -24,3 +24,13 @@ To run backend:
 python -m backend.app
 Tu run frontend:
 streamlit run frontend/app.py
+
+
+# TEG
+python -m venv .venv
+windows:
+.venv\Scripts\activate
+mac:
+source ./.venv/bin/Activate
+
+pip install -r requirements.txt
