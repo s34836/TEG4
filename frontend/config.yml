@@ -1,0 +1,29 @@
+# Chatbot Application Configuration
+
+# Environment Settings
+
+# Application UI Settings
+app:
+  title: AI Chatbot
+  layout: wide  # Options: wide, centered
+
+# OpenAI Settings
+default_model: gpt-4o-mini
+available_models:
+  - gpt-4o-mini
+  - gpt-3.5-turbo
+
+# Chat Settings
+default_system_message: >
+  "Jesteś eksperckim asystentem. Odpowiadaj wyłącznie na podstawie dostarczonego KONTEKSTU. Jeśli kontekst nie zawiera odpowiedzi, odpowiedz: 'Brak informacji w dostarczonym materiale.'"
+
+app_title: RAG do fragmentu książki Nagradzanie nauczycieli szkół publicznych
+chat_placeholder: Zadaj pytanie
+
+# Advanced Settings
+temperature: 0.7      # Controls randomness of responses (0.0-1.0)
+max_tokens: 4096      # Maximum tokens in completion (null = no limit)
+
+# Backend API URL
+#api_url: https://backend-243808292936.europe-central2.run.app/api/chat
+api_url: http://127.0.0.1:8080/api/chat
